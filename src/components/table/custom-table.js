@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'https://unpkg.com/lit@3/index.js?module';
+import { LitElement, html, css } from 'lit';
 import { TableCore } from './table-core.js';
 import './table.css';
 
