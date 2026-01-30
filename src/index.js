@@ -1,0 +1,1 @@
+export { CustomTable } from './components/table/custom-table.js';
