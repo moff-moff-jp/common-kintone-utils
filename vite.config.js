@@ -5,8 +5,13 @@ export default defineConfig({
     lib: {
       entry: 'src/components/table/custom-table.js',
       name: 'CustomTable',
-      fileName: () => 'custom-table.bundle.js',
-      formats: ['iife']   // 🔥 關鍵：給 kintone 用
+      formats: ['iife'],
+      fileName: () => 'custom-table.bundle.js'
+    },
+    rollupOptions: {
+      output: {
+        inlineDynamicImports: true
+      }
     },
     outDir: 'dist',
     emptyOutDir: true
